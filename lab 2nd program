@@ -1,0 +1,28 @@
+""" Emma, a mathematics enthusiast, is exploring a range of numbers and wants to count how many of them are not Fibonacci numbers.
+
+
+
+Help Emma determine the count of non-Fibonacci numbers within the given range [start, end] using the continue statement.
+
+Input format :
+The first line of input consists of an integer, representing the starting number of the range.
+
+The second line consists of an integer, representing the ending number of the range.
+
+Output format :
+The output prints a single integer, representing the count of numbers in the range that are not Fibonacci numbers."""
+
+
+# You are using Python
+x = int(input())
+y = int(input())
+count = 0
+for num in range(x, y+1):
+    a = 5 * num * num + 4
+    b = 5 * num * num - 4
+    s1 = int(a**0.5)
+    s2 = int(b**0.5)
+    if s1 * s1 == a or s2 * s2 == b:    # 5n^2 + 4 perfect square either of the condition is true number is fibonacci
+        continue      #use  continue to skip fibonacci num
+    count += 1     #increament count for non fibonacci number
+print(count)
