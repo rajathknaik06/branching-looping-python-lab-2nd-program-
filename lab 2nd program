@@ -26,3 +26,14 @@ for num in range(x, y+1):
         continue      #use  continue to skip fibonacci num
     count += 1     #increament count for non fibonacci number
 print(count)
+
+
+
+
+
+x = 10
+y = 15
+he range is [10, 11, 12, 13, 14, 15] 
+13 is fibonaci because having perfect square 849 
+10, 11 , 12 , 14 ,15 are non fibonacci number only 13 is fibonacci number 
+so five numbers are non fibonaci number so output is 5 
